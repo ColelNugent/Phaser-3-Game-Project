@@ -1,0 +1,8 @@
+Type in Terminal after to start server:
+> http-server
+
+CHECKING NODEJS VERSION:
+> node --version
+
+INSTALL LINK IF NOT INSTALLED:
+> https://nodejs.org/en
