@@ -51,6 +51,7 @@
         this.load.image('pumpkin', 'assets/pumpkin.png');
         this.load.image('bush', 'assets/bush.png');
         this.load.image('bench', 'assets/bench.png');
+        this.load.image('control', 'assets/control.png');
         this.load.spritesheet('run', 'assets/player_run.png', { frameWidth: 128, frameHeight: 70 });
         this.load.spritesheet('idle', 'assets/player_idle.png', { frameWidth: 128, frameHeight: 70});
         this.load.spritesheet('up', 'assets/player_jump.png', { frameWidth: 128, frameHeight: 77});
@@ -70,6 +71,7 @@
         this.add.image(678, 496, 'bush');
         this.add.image(871, 496, 'bush');
         this.add.image(450, 494, 'bench');
+        
 
         music = this.sound.add("music", { loop: true});
         jump = this.sound.add("jump", { loop: false});
@@ -126,7 +128,7 @@
         this.physics.add.collider(pumpkins, platforms);
         scoreText = this.add.text(425, 16, 'score: 0', { fontSize: '32px', fill: '#000'});
 
-        
+        this.add.image(175, 75, 'control');
     }
 
     function update ()
@@ -183,3 +185,4 @@
 
 </body>
 </html>
+
